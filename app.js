@@ -36,7 +36,7 @@ app.get('/elements',  (req, res)=> {
 })
 
 app.get('*',  (req, res)=> {
-    res.sendFile(__dirname + '/public/404.html')
+    res.render('401')
 })
 
 app.listen(port, () => {
